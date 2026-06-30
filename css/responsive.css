@@ -1,0 +1,20 @@
+/* Media queries */
+
+@media (max-width: 992px) {
+  :root { --section-py: 72px; }
+
+  .sobre-img-frame { max-width: 300px; aspect-ratio: 1; }
+}
+
+@media (max-width: 768px) {
+  :root { --section-py: 60px; }
+
+  .hero-title { font-size: clamp(2.8rem, 13vw, 4.5rem); }
+  .menu-icon-wrap { width: 52px; height: 52px; font-size: 2rem; }
+  .logo-sub { display: none; }
+}
+
+@media (max-width: 576px) {
+  .hero-title { font-size: 2.8rem; }
+  .mission-blockquote { font-size: 1.05rem; }
+}

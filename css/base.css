@@ -1,0 +1,74 @@
+/* Base, utilitários e tipografia */
+
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+::selection { background: var(--gold); color: var(--espresso); }
+
+::-webkit-scrollbar              { width: 8px; }
+::-webkit-scrollbar-track        { background: var(--beige); }
+::-webkit-scrollbar-thumb        { background: var(--caramel); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover  { background: var(--coffee); }
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .65s var(--ease), transform .65s var(--ease);
+}
+.reveal.visible { opacity: 1; transform: none; }
+
+/* Layout */
+.py-section { padding-top: var(--section-py); padding-bottom: var(--section-py); }
+
+/* Cores utilitárias */
+.bg-cream       { background-color: var(--cream) !important; }
+.bg-espresso    { background-color: var(--espresso) !important; }
+.bg-coffee-dark { background-color: var(--coffee-dark) !important; }
+
+.text-gold        { color: var(--gold) !important; }
+.text-gold-light  { color: var(--gold-light) !important; }
+.text-gold-faint  { color: var(--gold-faint) !important; }
+.text-caramel     { color: var(--caramel) !important; }
+.text-cream       { color: var(--cream) !important; }
+.text-sand        { color: var(--sand) !important; }
+.text-mid         { color: var(--text-mid) !important; }
+.text-light-custom { color: var(--text-light) !important; }
+
+.border-sand        { border-color: var(--sand) !important; }
+.border-subtle-dark { border-color: rgba(253,246,236,.08) !important; }
+
+.ls-wide   { letter-spacing: .12em; }
+.font-title  { font-family: var(--font-title) !important; }
+.font-script { font-family: var(--font-script) !important; }
+
+/* Tipografia de seção */
+.section-tag {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--caramel);
+}
+.section-tag-light { color: var(--gold-light); }
+
+.section-title {
+  font-family: var(--font-title);
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  font-weight: 700;
+  color: var(--espresso);
+  line-height: 1.2;
+}
+.section-title em { font-style: italic; color: var(--caramel); }
+
+.title-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: var(--caramel);
+  font-size: 1.1rem;
+  width: fit-content;
+}
+.title-divider span { display: block; width: 56px; height: 1px; background: currentColor; opacity: .35; }
+.title-divider-light { color: var(--gold-light); }

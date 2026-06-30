@@ -1,0 +1,27 @@
+:root {
+  --espresso:      #1C0E07;
+  --coffee-dark:   #3D1C0C;
+  --coffee:        #6F3A1B;
+  --brown:         #8B5230;
+  --caramel:       #C47D3A;
+  --gold:          #D4A847;
+  --gold-light:    #E8C26A;
+  --gold-faint:    rgba(212, 168, 71, .25);
+  --cream:         #FDF6EC;
+  --beige:         #F5E6D3;
+  --sand:          #E8D2B0;
+  --text-mid:      #5C3D1E;
+  --text-light:    #9E7A58;
+
+  --font-title:  'Playfair Display', Georgia, serif;
+  --font-body:   'Lato', system-ui, sans-serif;
+  --font-script: 'Dancing Script', cursive;
+
+  --section-py: 96px;
+  --ease: cubic-bezier(.25, .46, .45, .94);
+
+  /* Bootstrap overrides */
+  --bs-body-font-family: var(--font-body);
+  --bs-body-bg:          var(--cream);
+  --bs-body-color:       var(--espresso);
+}

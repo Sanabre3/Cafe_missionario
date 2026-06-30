@@ -1,0 +1,154 @@
+/* Componentes reutilizáveis: botões, cards, tabs, form, social */
+
+/* ---- Botões ---- */
+.btn-gold {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: var(--espresso);
+  font-weight: 700;
+  transition: background-color .25s, border-color .25s, transform .25s, box-shadow .25s;
+}
+.btn-gold:hover,
+.btn-gold:focus {
+  background-color: var(--gold-light);
+  border-color: var(--gold-light);
+  color: var(--espresso);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(212,168,71,.35);
+}
+
+.btn-outline-cream {
+  background: transparent;
+  border-color: rgba(253,246,236,.5);
+  color: var(--cream);
+  font-weight: 700;
+  transition: background-color .25s, border-color .25s, transform .25s;
+}
+.btn-outline-cream:hover,
+.btn-outline-cream:focus {
+  background-color: rgba(253,246,236,.1);
+  border-color: var(--cream);
+  color: var(--cream);
+  transform: translateY(-2px);
+}
+
+/* ---- Menu tabs (Bootstrap nav-pills override) ---- */
+.menu-tabs-bs .nav-link.menu-tab-btn {
+  font-weight: 700;
+  font-size: .9rem;
+  color: var(--text-mid);
+  background: var(--beige);
+  border: 2px solid transparent;
+  transition: all .25s var(--ease);
+}
+.menu-tabs-bs .nav-link.menu-tab-btn:hover {
+  border-color: var(--caramel);
+  color: var(--caramel);
+  background: var(--beige);
+}
+.menu-tabs-bs .nav-link.menu-tab-btn.active {
+  background: var(--espresso);
+  color: var(--gold);
+  border-color: var(--espresso);
+  box-shadow: 0 6px 20px rgba(28,14,7,.18);
+}
+
+/* ---- Menu cards ---- */
+.menu-card {
+  border-radius: 1rem !important;
+  border: 1px solid var(--sand) !important;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s;
+}
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(28,14,7,.13) !important;
+  border-color: var(--caramel) !important;
+}
+.menu-card-featured {
+  border: 1px solid var(--gold) !important;
+  background: linear-gradient(135deg, #fff 0%, #fffbf0 100%) !important;
+  box-shadow: 0 4px 20px rgba(212,168,71,.14) !important;
+}
+.menu-card-featured:hover {
+  border-color: var(--gold) !important;
+  box-shadow: 0 12px 36px rgba(212,168,71,.22) !important;
+}
+
+.menu-icon-wrap {
+  width: 60px;
+  height: 60px;
+  font-size: 2.4rem;
+  background: var(--beige);
+  border-radius: .6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.menu-price { color: var(--caramel); font-size: .95rem; white-space: nowrap; }
+
+.menu-badge {
+  background-color: var(--beige) !important;
+  color: var(--brown) !important;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.menu-badge-popular {
+  background-color: var(--gold) !important;
+  color: var(--espresso) !important;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+/* ---- Formulário dark ---- */
+.form-control-dark {
+  background-color: rgba(253,246,236,.06);
+  border: 1.5px solid rgba(253,246,236,.12);
+  border-radius: .6rem;
+  color: var(--cream);
+  transition: border-color .25s, background-color .25s, box-shadow .25s;
+}
+.form-control-dark::placeholder { color: rgba(253,246,236,.3); }
+.form-control-dark:focus {
+  background-color: rgba(212,168,71,.07);
+  border-color: var(--gold);
+  color: var(--cream);
+  box-shadow: 0 0 0 .2rem rgba(212,168,71,.2);
+}
+
+/* ---- Social links ---- */
+.social-link {
+  width: 48px;
+  height: 48px;
+  background: rgba(253,246,236,.07);
+  border: 1.5px solid rgba(253,246,236,.12);
+  color: var(--sand);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background .25s, border-color .25s, color .25s, transform .25s, box-shadow .25s;
+}
+.social-link:hover {
+  background: var(--caramel);
+  border-color: var(--caramel);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(196,125,58,.4);
+}
+.social-link-whatsapp:hover {
+  background: #25D366 !important;
+  border-color: #25D366 !important;
+  box-shadow: 0 6px 18px rgba(37,211,102,.4) !important;
+}
+
+/* ---- Verse card ---- */
+.verse-card {
+  background: rgba(212,168,71,.07) !important;
+  border: 1px solid rgba(212,168,71,.2) !important;
+  border-radius: 1rem !important;
+}

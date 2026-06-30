@@ -1,0 +1,129 @@
+/* Estilos específicos de cada seção */
+
+/* ---- Sobre ---- */
+.lead-text { font-size: 1.15rem; line-height: 1.8; color: var(--espresso); }
+
+.sobre-img-frame { aspect-ratio: 4/5; max-width: 380px; }
+
+.sobre-img-mock {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--coffee-dark) 0%, var(--coffee) 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 60px rgba(28,14,7,.2);
+  position: relative;
+  overflow: hidden;
+}
+.sobre-img-mock::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 40%, rgba(212,168,71,.12) 0%, transparent 60%);
+}
+.sobre-mock-icon { font-size: 6rem; color: rgba(212,168,71,.2); position: relative; z-index: 1; }
+
+.sobre-badge {
+  bottom: -16px;
+  right: -16px;
+  background: var(--gold);
+  color: var(--espresso);
+  padding: 14px 20px;
+  border-radius: 1rem;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+/* ---- Highlights ---- */
+.highlight-card {
+  border: 1px solid rgba(253,246,236,.06);
+  transition: background .3s, transform .3s;
+  cursor: default;
+}
+.highlight-card:hover {
+  background-color: rgba(212,168,71,.08) !important;
+  transform: translateY(-4px);
+}
+
+/* ---- Missão ---- */
+.mission-bg-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: .035;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z' fill='%23FDF6EC' fill-rule='evenodd'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.mission-card {
+  background: rgba(253,246,236,.05) !important;
+  border: 1px solid rgba(253,246,236,.1) !important;
+  border-radius: 1rem !important;
+  position: relative;
+  overflow: hidden;
+  transition: background .3s, transform .3s;
+}
+.mission-card:hover {
+  background: rgba(212,168,71,.1) !important;
+  transform: translateY(-5px);
+}
+
+.mission-step {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  font-family: var(--font-title);
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: rgba(212,168,71,.07);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.mission-blockquote {
+  font-size: clamp(1.15rem, 2.5vw, 1.6rem);
+  line-height: 1.55;
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+/* ---- Evento ---- */
+.evento-card {
+  border-radius: 1rem !important;
+  border: 1px solid var(--sand) !important;
+  transition: transform .3s var(--ease), box-shadow .3s, border-color .3s;
+}
+.evento-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(28,14,7,.12) !important;
+  border-color: var(--caramel) !important;
+}
+.evento-card-featured {
+  background-color: var(--espresso) !important;
+  border-color: var(--espresso) !important;
+  box-shadow: 0 10px 40px rgba(28,14,7,.25) !important;
+}
+.evento-card-featured:hover {
+  border-color: var(--espresso) !important;
+  box-shadow: 0 16px 48px rgba(28,14,7,.35) !important;
+}
+
+.evento-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--beige);
+  color: var(--caramel);
+  font-size: 1.4rem;
+  transition: background .25s;
+}
+.evento-card:not(.evento-card-featured):hover .evento-icon { background: var(--sand); }
+.evento-icon-featured { background: rgba(212,168,71,.15) !important; color: var(--gold) !important; }
+
+.evento-info { font-size: 1.3rem; color: var(--espresso); }
+.evento-info-featured { font-size: 1.2rem; }
+
+/* ---- Footer ---- */
+.footer-script {
+  font-family: var(--font-script);
+  font-size: 1.15rem;
+  color: var(--gold);
+  opacity: .65;
+}
